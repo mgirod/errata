@@ -1,0 +1,20 @@
+#!/usr/bin/sh
+
+ct=/opt/rational/clearcase/bin/cleartool
+
+if [ -n "$1" ]; then
+    REMHOST="-host $1"
+else unset REMHOST
+fi
+
+$ct sched -get -sched $REMHOST | perl -nle \
+  'if (s/# Job\.(Task|Schedule\.Sequential\.FollowsJob):/Job.$1:/) {
+     print;
+     next
+   }
+   print unless
+          /^\s+Job\.LastCompletionInfo\.Messages\.Begin:/
+       .../^\s+Job\.LastCompletionInfo\.Messages\.End:/
+     or /^\s+Job\.(
+           (Id|Task|Schedule\.Sequential\.FollowsJob):\ \d+
+         | (LastModified|NextRunTime|Created|LastCompletionInfo\ .\w+):\s.*)$/x'
