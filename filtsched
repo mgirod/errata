@@ -17,4 +17,4 @@ $ct sched -get -sched $REMHOST | perl -nle \
        .../^\s+Job\.LastCompletionInfo\.Messages\.End:/
      or /^\s+Job\.(
            (Id|Task|Schedule\.Sequential\.FollowsJob):\ \d+
-         | (LastModified|NextRunTime|Created|LastCompletionInfo\ .\w+):\s.*)$/x'
+  | (LastModified|NextRunTime|Created|(RunningStatus|LastCompletionInfo)\.\w+):\s.*)$/x'
