@@ -12,6 +12,6 @@ _A similar procedure may be necessary if some level of testing in mandated to ta
 
 A similar procedure may be necessary if some level of testing is mandated to take place in an environment where the SCM system is not available.
 
-### Coment ###
+### Comment ###
 
 Typo: _in_ instead of _is_.
