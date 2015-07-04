@@ -8,6 +8,7 @@ IBM Rational ClearCase 7.0: Master the Tools That Monitor, Analyze, and Manage S
 # Details #
 
   * [1. Using the command line](UsingTheCommandLine.md)
+  * [2. Presentation of ClearCase](PresentationOfClearCase.md)
   * [3. Build Auditing and Avoidance](BuildAuditingAvoidance.md)
   * [5. MultiSite Concerns](MultiSiteConcerns.md)
   * [6. Primary Metadata](PrimaryMetadata.md)
