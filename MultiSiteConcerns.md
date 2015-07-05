@@ -1,10 +1,15 @@
-# Chapter 5. MultiSite Concerns #
+# Chapter 5. MultiSite Concerns
 
-## Shortcomings of MultiSite ##
+## Shortcomings of MultiSite
+
 p 120
-### We wrote ###
-_Versioned derived objects are thus simply not visible to `lsdo` and cannot (probably) be winked in._
-### Correction ###
+
+*We wrote:*
+
+Versioned derived objects are thus simply not visible to `lsdo` and cannot (probably) be winked in.
+
+*Correction:*
+
 Versioned derived objects are not visible to `lsdo`. They may however be winked in. In practice however, successful winkin on a remote site requires that _all_ the intermediate derived objects would be checked in.
 
 Let's illustrate this by completing our example, forgetting for now the `-cr` option, hence checking in the data as well as the config record.
@@ -171,9 +176,10 @@ It seems to be a very tough requirement if **all** the intermediate derived obje
 
 One may consider means to support this, using `syntree`, its `-vreuse` and `-cr` options, and the _branchoff root_ strategy; let's admit that will depart from common standard procedures.
 
-### Comment ###
+*Comment:
+
 We are happy that we added the word "probably", but even more to admit that our conclusion (no winkin) was incorrect.
 
 We did not appreciate the advantages of the change we detected. Derived object versions were indeed detached from the other derived objects, but this didn't impact their being winkable, and at first sight, it did solve the issues with reference counting under MultiSite. Effectively, it makes it possible to replicate derived objects in a semi-manual way.
 
-In retrospect, we have to take back, with an apology, the adjective naive we used to qualify all proponents of staging practices.
+In retrospect, we have to take back, with an apology, the adjective naive we used to qualify all proponents of staging practices.*

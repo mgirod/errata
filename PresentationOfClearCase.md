@@ -6,7 +6,7 @@
 
 p 34
 
-*In the second example transcript, the newline in the middle of the ls output is spurious. Correction:*
+*In the second example transcript, the newline in the middle of the `ls` output is spurious. Correction:*
 
     $ ls -la /vob/myvob
     total 18

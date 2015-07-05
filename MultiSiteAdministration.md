@@ -1,9 +1,11 @@
-# Chapter 11. MultiSite Administration #
+# Chapter 11. MultiSite Administration
 
-## Troubleshooting ##
+## Troubleshooting
+
 p 277
-### Insertion of new material ###
-### Make Container Failed: File exists ###
+
+*Insertion of new material:*
+### Make Container Failed: File exists
 The exact error, at import:
 ```
 multitool: Error: Operation "vobsvr_make_container_permanent" failed: File exists.

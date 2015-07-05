@@ -1,20 +1,21 @@
-# Chapter 9. Secondary Metadata #
+# Chapter 9. Secondary Metadata
 
-## p 204 ##
+p 204
 
-### We wrote ###
+*We wrote:*
 ```
 $ function ctx {
   /usr/bin/cleartool.plx $@
 }
 ```
 
-### Correction ###
+*Correction:*
 ```
 $ function ctx {
   /usr/bin/cleartool.plx "$@"
 }
 ```
 
-### Comment ###
-The double quotes preserve the integrity of shell arguments, in case they contain spaces.
+*Comment:
+
+The double quotes preserve the integrity of shell arguments, in case they contain spaces.*
