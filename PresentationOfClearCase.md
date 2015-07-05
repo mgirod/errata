@@ -21,6 +21,6 @@ p 34
 
 p 36
 
-*Typo on the first line of paragraph 4 (following the first example): missing '`/`'. Correction:*
+*Typo on the first line of paragraph 3 (following the first example): missing `/`. Correction:*
 
 Here the vob tag is `/vob/perl`, `/vob/perl/.@@/APP` signifies a version ...
